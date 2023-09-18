@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    min-height: 100vh; /* 设置最小高度为视口高度，确保内容撑满屏幕 */
+    margin: 0; /* 重置默认的外边距 */
+}
+
+.sidebar {
+    background-color: #3498db;
+    color: white;
+    padding: 20px;
+    width: 200px; /* 指定固定宽度 */
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin-bottom: 10px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 10px;
+}
+
+.sidebar a:hover {
+    background-color: #2980b9;
+}
+
+.content {
+    padding: 20px;
+    flex-grow: 1; /* 让内容部分可以自动扩展以填充剩余空间 */
+    overflow-y: auto; /* 允许内容溢出时出现垂直滚动条 */
+}
+
+.header {
+    background-color: #3498db;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.about, .contact {
+    margin-top: 20px;
+}
+
+.footer {
+    background-color: #34495e;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
